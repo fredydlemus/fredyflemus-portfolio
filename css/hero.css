@@ -1,0 +1,37 @@
+.hero {
+  display: grid;
+  grid-template-rows: 2fr 4fr 2fr;
+  grid-template-columns: 1fr 10fr 1fr;
+  height: calc(100vh - 74px);
+  background-color: var(--dark-blue);
+}
+.hero .titulo-hero {
+  grid-column: 2 / 3;
+  justify-self: start;
+  align-self: end;
+}
+
+.hero .titulo-hero:first-child {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.hero .titulo-hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero .foto-hero {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.hero .foto-hero img {
+  border-radius: 10px;
+}
+
+.hero .button-hero {
+  grid-row: 3 / 3;
+  grid-column: 2 / 3;
+}

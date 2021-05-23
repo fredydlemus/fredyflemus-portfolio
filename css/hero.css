@@ -11,12 +11,17 @@
   align-self: end;
 }
 
-.hero .titulo-hero:first-child {
+.hero .titulo-hero p:first-child {
   font-size: 20px;
   line-height: 30px;
 }
 
+.hero .titulo-hero p:last-child {
+  font-size: 16px;
+}
+
 .hero .titulo-hero h1 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 

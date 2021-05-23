@@ -27,6 +27,7 @@
 body {
   font: var(--body1);
   color: var(--white);
+  background-color: var(--dark-blue);
 }
 
 .entry {

@@ -1,6 +1,6 @@
 .hero {
   display: grid;
-  grid-template-rows: 2fr 4fr 2fr;
+  grid-template-rows: 2fr 2fr 3fr;
   grid-template-columns: 1fr 10fr 1fr;
   height: calc(100vh - 74px);
   background-color: var(--dark-blue);
@@ -8,7 +8,9 @@
 .hero .titulo-hero {
   grid-column: 2 / 3;
   justify-self: start;
-  align-self: end;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .hero .titulo-hero p:first-child {
@@ -39,4 +41,5 @@
 .hero .button-hero {
   grid-row: 3 / 3;
   grid-column: 2 / 3;
+  margin-top: 20px;
 }

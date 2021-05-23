@@ -4,6 +4,11 @@
   height: 50px;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 0 2px var(--dark);
 }
 
 .header .logo {
@@ -26,9 +31,10 @@
 .header nav {
   padding: 20px;
   position: fixed;
-  right: -120px;
+  right: 0px;
   top: 0;
   text-transform: uppercase;
+  display: none;
 }
 
 .header nav ul li {

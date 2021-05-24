@@ -12,7 +12,7 @@ imagenMenu = document.getElementById("img-menu");
 function mostrarMenu(){
     
     imagenMenu.src = closeUrl;
-    menuButton.appendChild(imagenMenu);
+    imagenMenu.width = "16";
     menu.classList.add("show");
     darkWindow.classList.add("shadow");
     darkWindow.addEventListener("click", cerrarMenu);
@@ -25,5 +25,6 @@ function cerrarMenu(){
     darkWindow.removeEventListener("click", cerrarMenu);
     menuButton.removeEventListener("click", cerrarMenu);
     imagenMenu.src = openUrl;
-    menuButton.appendChild(imagenMenu);
+    imagenMenu.width = "20";
+    
 }

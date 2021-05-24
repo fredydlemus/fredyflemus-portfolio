@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div id="darkWindow"></div>
     <section class="entry">
         <header class="header">
             <p class="logo">fredyflemus</p>
-            <div class="menu-option"><img src="./icons/list.svg" width="20" height="20" alt=""></div>
-            <nav class="menu">
-                <ul>
-                    <li>Hola</li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
-                    <li><button class="second-button">Curriculum</button></li>
-                </ul>
-            </nav>
+            <div id="menu-button" class="menu-option"><img src="./icons/list.svg" width="20" height="20" alt="" id="img-menu"></div>
+            
         </header>
+        <nav id="menu">
+            <ul>
+                <li><button class="button">Curriculum</button></li>
+                <li><a class="is-active" href="">Hola</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="">Contacto</a></li>
+                
+            </ul>
+        </nav>
         <section class="hero">
             <div class="titulo-hero">
                 <p>Hola</p>
@@ -44,5 +47,6 @@
             </div>
         </section>
     </section>
+    <script src="javascript/index.js"></script>
 </body>
 </html>

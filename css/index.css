@@ -35,3 +35,16 @@ body {
   width: 100vw;
   background-color: var(--dark-blue);
 }
+
+#darkWindow {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 23, 37, 0.7);
+  z-index: 1;
+}
+
+#darkWindow.shadow {
+  display: block;
+}

@@ -1,5 +1,5 @@
-closeUrl = "../icons/close.svg";
-openUrl = "../icons/list.svg";
+closeUrl = "./icons/close.svg";
+openUrl = "./icons/list.svg";
 
 menuButton = document.getElementById("menu-button");
 menuButton.addEventListener("click", mostrarMenu);

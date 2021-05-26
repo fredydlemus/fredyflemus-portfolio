@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 25px;
   display: grid;
-  grid-template-rows: 2fr 2fr 3fr;
+  grid-template-rows: 2fr auto 3fr;
   grid-template-columns: 3fr 10fr 3fr;
   height: calc(100vh - 74px);
   background-color: var(--dark-blue);

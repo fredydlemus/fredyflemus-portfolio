@@ -33,6 +33,13 @@
   grid-column: 2 / 3;
   justify-self: center;
   align-self: center;
+  width: 195px;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--skyblue);
 }
 
 .hero .foto-hero img {

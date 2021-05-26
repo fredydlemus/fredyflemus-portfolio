@@ -12,7 +12,7 @@ imagenMenu = document.getElementById("img-menu");
 function mostrarMenu(evento){
     evento.preventDefault();
     imagenMenu.src = closeUrl;
-    
+    imagenMenu.width = 16;
     menu.classList.add("show");
     darkWindow.classList.add("shadow");
     darkWindow.addEventListener("touchstart", cerrarMenu);
@@ -26,6 +26,7 @@ function cerrarMenu(evento){
     darkWindow.removeEventListener("touchstart", cerrarMenu);
     menuButton.removeEventListener("touchstart", cerrarMenu);
     imagenMenu.src = openUrl;
+    imagenMenu.width = 20;
     
     
 }

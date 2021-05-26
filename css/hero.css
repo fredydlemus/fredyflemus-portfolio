@@ -1,5 +1,6 @@
 .hero {
-  margin-top: 40px;
+  position: relative;
+  margin-top: 25px;
   display: grid;
   grid-template-rows: 2fr 2fr 3fr;
   grid-template-columns: 3fr 10fr 3fr;
@@ -40,6 +41,7 @@
   align-items: center;
   border-radius: 50%;
   border: 1px solid var(--skyblue);
+  z-index: 1;
 }
 
 .hero .foto-hero img {
@@ -50,4 +52,14 @@
   grid-row: 3 / 3;
   grid-column: 2 / 3;
   margin-top: 20px;
+}
+
+.barra {
+  position: absolute;
+  width: 150%;
+  height: 10px;
+  background-color: var(--skyblue);
+  transform: rotate(-23deg);
+  top: 90px;
+  left: -98px;
 }

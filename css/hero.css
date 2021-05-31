@@ -90,6 +90,7 @@
   .hero .titulo-hero {
     grid-column: 1 / 2;
     align-self: end;
+    margin-left: 75px;
   }
 
   .hero .titulo-hero h1 {
@@ -104,6 +105,7 @@
   .hero .button-hero {
     grid-column: 1 /2;
     grid-row: 2 / 3;
+    margin-left: 75px;
   }
 
   .hero .foto-hero {

@@ -42,6 +42,12 @@
   border: none;
 }
 
+.is-secondary {
+  border: 2px solid var(--skyblue);
+  background-color: var(--dark);
+  color: var(--skyblue);
+}
+
 /* .button:before {
   width: 80px;
   height: 33px;

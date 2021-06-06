@@ -2,11 +2,12 @@
   position: relative;
   padding-top: 25px;
   display: grid;
-  grid-template-rows: 2fr auto 3fr;
+  grid-template-rows: 2fr auto 2fr;
   grid-template-columns: 3fr 10fr 3fr;
-  height: calc(100vh - 74px);
+
   background-color: var(--dark-blue);
-  max-height: 500px;
+
+  margin-bottom: 20px;
 }
 .hero .titulo-hero {
   grid-column: 2 / 3;

@@ -1,0 +1,36 @@
+footer {
+  text-align: center;
+}
+
+footer .social {
+  justify-content: center;
+}
+
+.footer-logo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .footer-logo {
+    display: block;
+  }
+
+  footer .social {
+    order: 3;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .copyrigth {
+    display: flex;
+    gap: 8px;
+  }
+}

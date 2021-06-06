@@ -1,6 +1,8 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./buttons.css";
+@import "./projects.css";
+@import "./footer.css";
 
 * {
   margin: 0;

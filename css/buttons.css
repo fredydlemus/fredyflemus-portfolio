@@ -42,10 +42,29 @@
   border: none;
 }
 
+.button:hover {
+  background-color: var(--skyblue-hover);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: var(--skyblue-active);
+}
+
 .is-secondary {
   border: 2px solid var(--skyblue);
   background-color: var(--dark);
   color: var(--skyblue);
+}
+
+.is-secondary:hover {
+  border: 2px solid var(--skyblue);
+  background-color: var(--dark);
+  font-size: 16px;
+}
+
+.is-secondary:active {
+  opacity: 0.5;
 }
 
 /* .button:before {

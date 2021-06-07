@@ -24,6 +24,8 @@
   --dark-blue: #00243b;
   --white: #eee4e1;
   --skyblue: #5dd9c1;
+  --skyblue-hover: #96ecdb;
+  --skyblue-active: #47ad99;
 }
 
 body {

@@ -11,6 +11,14 @@
   padding-right: 40px;
 }
 
+.project:nth-child(odd) {
+  background-color: var(--dark-blue);
+}
+
+.project:nth-child(odd) .is-secondary {
+  background-color: var(--dark-blue);
+}
+
 .projects h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -30,6 +38,7 @@
   /* margin-left: 4px; */
   /* box-shadow: -4px 4px 0 var(--white); */
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .projects-image {
@@ -43,7 +52,11 @@
 .projects-description {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+}
+
+.projects-description p {
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .projects-description a {

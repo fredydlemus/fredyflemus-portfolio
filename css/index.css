@@ -53,7 +53,6 @@ body {
 
 .etiquetas {
   display: flex;
-  gap: 5px;
 }
 
 .html {
@@ -64,6 +63,7 @@ body {
   border: 1px solid #f44611;
   border-radius: 10px;
   color: #f44611;
+  margin-right: 5px;
 }
 
 .css {
@@ -74,4 +74,5 @@ body {
   border: 1px solid #00aae4;
   border-radius: 10px;
   color: #00aae4;
+  margin-right: 5px;
 }

@@ -76,3 +76,14 @@ body {
   color: #00aae4;
   margin-right: 5px;
 }
+
+.js {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #ffff00;
+  border-radius: 10px;
+  color: #ffff00;
+  margin-right: 5px;
+}

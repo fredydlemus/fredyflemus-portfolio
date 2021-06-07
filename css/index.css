@@ -50,3 +50,28 @@ body {
 #darkWindow.shadow {
   display: block;
 }
+
+.etiquetas {
+  display: flex;
+  gap: 5px;
+}
+
+.html {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #f44611;
+  border-radius: 10px;
+  color: #f44611;
+}
+
+.css {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #00aae4;
+  border-radius: 10px;
+  color: #00aae4;
+}

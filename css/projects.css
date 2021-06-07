@@ -69,19 +69,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  .projects {
+  .project {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    gap: 50px;
   }
 
   .projects-description {
     flex: 1;
   }
 
-  .projects:nth-child(odd) .projects-image {
+  .projects-image {
+    flex: 1;
+    height: 100%;
+  }
+
+  .project:nth-child(odd) .projects-image {
     order: 2;
     flex: 1;
     text-align: center;

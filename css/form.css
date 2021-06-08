@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
   max-width: 540px;
   margin: auto;
   margin-top: 40px;
@@ -12,6 +12,7 @@
 
 .form .title {
   margin: 0;
+  margin-bottom: 16px;
   /* border-radius: 10px; */
 }
 
@@ -19,12 +20,14 @@
   color: var(--white);
   margin: 0;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .form label {
   display: flex;
   flex-direction: column;
   font: var(--button);
+  margin-bottom: 16px;
 }
 
 .form input,

@@ -105,6 +105,11 @@
     justify-self: center;
   }
 
+  #header-menu ul li a:hover {
+    color: var(--skyblue);
+    transition-duration: 0.5s;
+  }
+
   #header-menu ul a {
     color: var(--white);
     text-decoration: none;

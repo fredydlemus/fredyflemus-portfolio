@@ -26,6 +26,12 @@
   height: 24px;
 }
 
+.button-icon:hover {
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+  background-color: var(--dark);
+}
+
 .button {
   background-color: var(--skyblue);
   color: var(--dark);
@@ -45,6 +51,8 @@
 .button:hover {
   background-color: var(--skyblue-hover);
   cursor: pointer;
+  font-size: 16px;
+  transition-duration: 0.3s;
 }
 
 .button:active {
@@ -61,6 +69,7 @@
   border: 2px solid var(--skyblue);
   background-color: var(--dark);
   font-size: 16px;
+  transition-duration: 0.3s;
 }
 
 .is-secondary:active {

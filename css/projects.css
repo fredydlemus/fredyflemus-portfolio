@@ -31,8 +31,6 @@
 
 .projects-image {
   width: 100%;
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 .projects-image img {
@@ -42,8 +40,6 @@
 .projects-description {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 .projects-description p {
@@ -67,16 +63,20 @@
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    gap: 50px;
+    /* gap: 50px; */
   }
 
   .projects-description {
     flex: 1;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .projects-image {
     flex: 1;
     height: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .project:nth-child(odd) .projects-image {

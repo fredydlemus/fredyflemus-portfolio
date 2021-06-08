@@ -11,7 +11,7 @@ let imagenMenu = document.getElementById("img-menu");
 let headerMenu = document.getElementById("header-menu");
 
 headerMenu.addEventListener("click", clickEnMenu);
-menu.addEventListener("touchstart", touchEnMenu);
+// menu.addEventListener("touchstart", touchEnMenu);
 
 
 function touchEnMenu(){

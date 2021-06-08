@@ -38,6 +38,7 @@ body {
   font: var(--body1);
   color: var(--white);
   background-color: var(--dark-blue);
+  scroll-behavior: smooth;
 }
 
 .entry {
@@ -53,6 +54,7 @@ body {
   height: 100vh;
   background-color: rgba(18, 23, 37, 0.7);
   z-index: 2;
+  scroll-behavior: smooth;
 }
 
 #darkWindow.shadow {

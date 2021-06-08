@@ -1,0 +1,15 @@
+.title {
+  align-self: flex-start;
+  border-bottom: 2px solid gray;
+  /* background-color: var(--skyblue); */
+  color: var(--white);
+  font: var(--headline5);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  /* margin-left: 4px; */
+  /* box-shadow: -4px 4px 0 var(--white); */
+  text-decoration: none;
+  margin-bottom: 16px;
+}

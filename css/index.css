@@ -2,6 +2,8 @@
 @import "./hero.css";
 @import "./buttons.css";
 @import "./projects.css";
+@import "./title.css";
+@import "./form.css";
 @import "./footer.css";
 
 * {
@@ -26,6 +28,10 @@
   --skyblue: #5dd9c1;
   --skyblue-hover: #96ecdb;
   --skyblue-active: #47ad99;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

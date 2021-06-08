@@ -4,6 +4,10 @@
   padding-top: 40px;
 }
 
+.projects h2:first-child {
+  text-align-last: center;
+}
+
 .project {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -20,25 +24,9 @@
 }
 
 .projects h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  border-bottom: 1px solid gray;
-  padding-bottom: 15px;
-}
-
-.project-title {
-  align-self: flex-start;
-  background-color: var(--skyblue);
-  color: var(--dark);
-  font: var(--headline5);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  /* margin-left: 4px; */
-  /* box-shadow: -4px 4px 0 var(--white); */
-  text-decoration: none;
-  margin-bottom: 16px;
+  /* border-radius: 10px; */
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .projects-image {
@@ -65,7 +53,7 @@
 
 .projects-description a:first-child {
   margin-top: 40px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 @media screen and (min-width: 768px) {

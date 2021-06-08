@@ -11,17 +11,18 @@
 </head>
 <body>
     <div id="darkWindow"></div>
-    
+    <div id="hola"></div>
     <header class="header">
-            <p class="logo">fredyflemus<br><span class="subtitulo">portafolio</span> </p>
+        <a href="index.html"><p class="logo">fredyflemus<br><span class="subtitulo">portafolio</span> </p></a>
+            <!-- <p class="logo">fredyflemus<br><span class="subtitulo">portafolio</span> </p> -->
             
             <div id="menu-button" class="menu-option"><img src="./icons/list.svg" width="20" height="20" alt="" id="img-menu"></div>
             <nav id="header-menu">
                 <ul>
                     
-                    <li><a class="is-active" href="">Hola</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li><a href="projects">Contacto</a></li>
+                    <li><a class="is-active" href="#hola">Hola</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                     <li><button class="button">Curriculum</button></li>
                     
                 </ul>
@@ -29,13 +30,13 @@
     <nav aria-label="main-navigation" id="menu">
             <ul>
                 <li><button class="button">Curriculum</button></li>
-                <li><a class="is-active" href="">Hola</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a class="is-active" href="#hola">Hola</a></li>
+                <li><a href="#proyectos2">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 
             </ul>
     </nav>
-    <section aria-label="main" class="hero">
+    <section aria-label="main" class="hero" >
             <!-- <div class="barra"></div> -->
             <div class="titulo-hero">
                 <p>Hola</p>
@@ -56,17 +57,20 @@
                 </div>
                 <div class="button">Descargar Curriculum</div>
             </div>
+            <div id="proyectos"></div>
+            <div id="proyectos2"></div>
             
     </section>
-    <section aria-label="projects" class="projects">
-        <h2>Proyectos</h2>
+    
+    <section aria-label="projects" class="projects"  >
+        <h2 class="title">Proyectos</h2>
         
         <div class="project">
             <div class="projects-image">
                 <img src="" alt="" width="300" height="300">
             </div>
             <div class="projects-description">
-                <a class="project-title" target="_blank" href="#">TitleProyecto</a>
+                <a class="title" target="_blank" href="#">TitleProyecto</a>
                 <div class="etiquetas">
                     <div class="html">HTML</div>
                     <div class="css">CSS</div>
@@ -81,7 +85,7 @@
                 <img src="" alt="" width="300" height="300">
             </div>
             <div class="projects-description">
-                <a class="project-title" target="_blank" href="#">TitleProyecto</a>
+                <a class="title" target="_blank" href="#">TitleProyecto</a>
                 <div class="etiquetas">
                     <div class="html">HTML</div>
                     <div class="css">CSS</div>
@@ -97,17 +101,40 @@
                 <img src="" alt="" width="300" height="300">
             </div>
             <div class="projects-description">
-                <a class="project-title" target="_blank" href="#">TitleProyecto</a>
+                <a class="title" target="_blank" href="#">TitleProyecto</a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aperiam minima aliquid quo esse consequuntur facilis iste doloremque voluptates beatae vitae ducimus cumque, incidunt maxime non nihil laboriosam temporibus rem.</p>
                 <a target="_blank" href="#" class="button">Ver Código</a>
                 <a target="_blank" href="#" class="button is-secondary">Ver Proyecto</a>
             </div>
         </div>
+        <div id="contacto"></div>
         
 
        
        
     </section>
+    <form action="" method="POST" class="form" >
+        <h2 class="title">Hablemos</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eos excepturi tempora autem omnis, eaque distinctio quaerat optio. </p>
+        <label for="form-name">
+            Nombre Completo
+            <input required name="name" id="form-name" type="text" placeholder="nombre">
+        </label>
+        
+        <label for="form-email">
+            Correo electrónico
+            <input required name="email" id="form-email" type="email" placeholder="correo">
+        </label>
+        
+        <label for="form-message">
+            Mensaje
+            <textarea required name="message" id="form-message" placeholder="Mensaje" cols="30" rows="6"></textarea>
+            
+        </label>
+        
+        <button class="button" type="submit">Enviar</button>
+   
+    </form>
     <footer>
         <div class="footer-logo"> 
             <p class="logo">fredyflemus<br><span class="subtitulo">portafolio</span> </p>

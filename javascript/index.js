@@ -14,9 +14,10 @@ headerMenu.addEventListener("click", clickEnMenu);
 menu.addEventListener("touchstart", touchEnMenu, true);
 
 
+
 function touchEnMenu(evento){
     evento.preventDefault();
-    console.log(evento.target.attributes[0].nodeValue);
+    
 
     
     // moverseA(evento.target.href);
@@ -26,6 +27,8 @@ function touchEnMenu(evento){
         document.querySelector(evento.target.attributes[0].nodeValue).scrollIntoView({
             behavior: 'smooth'
           });
+
+        
 
         let seleccion = evento.target;
         
@@ -98,8 +101,8 @@ function cerrarMenu(evento){
     
 }
 
-function moverseA(idElemento){
-    location = idElemento;
-}
+// function moverseA(idElemento){
+//     location = idElemento;
+// }
 
 

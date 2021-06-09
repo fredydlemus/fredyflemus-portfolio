@@ -1,3 +1,44 @@
+$(window).on("scroll", function(){
+
+    if($(window).scrollTop() > $("#hola").offset().top - 50){
+        $("#hola-menu").addClass("is-active");
+        $("#hola-hmenu").addClass("is-active");
+        
+
+    }else{
+        $("#hola-menu").removeClass("is-active");
+        $("#hola-hmenu").removeClass("is-active");
+        
+    }
+
+    if($(window).scrollTop() > $("#proyectos").offset().top - 50){
+        $("#proyectos-menu").addClass("is-active");
+        $("#hola-menu").removeClass("is-active");
+        $("#proyectos-hmenu").addClass("is-active");
+        $("#hola-hmenu").removeClass("is-active");
+
+    }else{
+        
+        $("#proyectos-menu").removeClass("is-active");
+        $("#proyectos-hmenu").removeClass("is-active");
+    }
+
+    if($(window).scrollTop() > $("#contacto").offset().top - 50){
+        $("#contacto-menu").addClass("is-active");
+        $("#proyectos-menu").removeClass("is-active");
+        $("#contacto-hmenu").addClass("is-active");
+        $("#proyectos-hmenu").removeClass("is-active");
+
+    }else{
+        
+        $("#contacto-menu").removeClass("is-active");
+        $("#contacto-hmenu").removeClass("is-active");
+    }
+    
+})
+
+
+
 let closeUrl = "./icons/close.svg";
 let openUrl = "./icons/list.svg";
 

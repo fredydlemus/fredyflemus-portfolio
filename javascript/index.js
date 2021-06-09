@@ -65,9 +65,7 @@ function touchEnMenu(evento){
     
     if(evento.target.nodeName === "A"){
         
-        document.querySelector(evento.target.attributes[0].nodeValue).scrollIntoView({
-            behavior: 'smooth'
-          });
+       
 
         
 
@@ -95,7 +93,7 @@ function touchEnMenu(evento){
 }
 
 function clickEnMenu(evento){
-    console.log(evento.target.attributes[0].nodeValue);
+    // console.log(evento.target.attributes[0].nodeValue);
     if(evento.target.nodeName === "A"){
         
         let seleccion = evento.target;

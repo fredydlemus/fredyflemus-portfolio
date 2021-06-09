@@ -16,9 +16,17 @@ menu.addEventListener("touchstart", touchEnMenu, true);
 
 function touchEnMenu(evento){
     evento.preventDefault();
-    // console.log(evento.target);
-    moverseA(evento.target.href);
+    console.log(evento.target.attributes[0].nodeValue);
+
+    
+    // moverseA(evento.target.href);
+    
     if(evento.target.nodeName === "A"){
+        
+        document.querySelector(evento.target.attributes[0].nodeValue).scrollIntoView({
+            behavior: 'smooth'
+          });
+
         let seleccion = evento.target;
         
         seleccion.classList.add("is-active");
@@ -43,8 +51,9 @@ function touchEnMenu(evento){
 }
 
 function clickEnMenu(evento){
-    console.log(evento);
+    console.log(evento.target.attributes[0].nodeValue);
     if(evento.target.nodeName === "A"){
+        
         let seleccion = evento.target;
         seleccion.classList.add("is-active");
         let hermanoLeft = seleccion.parentNode.previousElementSibling;
@@ -92,3 +101,5 @@ function cerrarMenu(evento){
 function moverseA(idElemento){
     location = idElemento;
 }
+
+

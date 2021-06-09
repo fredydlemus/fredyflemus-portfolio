@@ -11,11 +11,35 @@ let imagenMenu = document.getElementById("img-menu");
 let headerMenu = document.getElementById("header-menu");
 
 headerMenu.addEventListener("click", clickEnMenu);
-// menu.addEventListener("touchstart", touchEnMenu);
+menu.addEventListener("touchstart", touchEnMenu, true);
 
 
-function touchEnMenu(){
-    console.log("hola mamu");
+function touchEnMenu(evento){
+    evento.preventDefault();
+    // console.log(evento.target);
+    moverseA(evento.target.href);
+    if(evento.target.nodeName === "A"){
+        let seleccion = evento.target;
+        
+        seleccion.classList.add("is-active");
+        let hermanoLeft = seleccion.parentNode.previousElementSibling;
+        let hermanoRigth = seleccion.parentNode.nextElementSibling;
+
+        while(hermanoLeft != undefined){
+            hermanoLeft = hermanoLeft.firstChild;
+            hermanoLeft.classList.remove("is-active");
+            hermanoLeft = hermanoLeft.parentNode.previousElementSibling;
+        }
+
+        while(hermanoRigth != undefined){
+            hermanoRigth = hermanoRigth.firstChild;
+            hermanoRigth.classList.remove("is-active");
+            hermanoRigth = hermanoRigth.parentNode.nextElementSibling;
+        }
+
+    }
+
+    cerrarMenu(evento);
 }
 
 function clickEnMenu(evento){
@@ -63,4 +87,8 @@ function cerrarMenu(evento){
     imagenMenu.width = 20;
     
     
+}
+
+function moverseA(idElemento){
+    location = idElemento;
 }

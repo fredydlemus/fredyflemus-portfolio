@@ -66,7 +66,9 @@ function touchEnMenu(evento){
     if(evento.target.nodeName === "A"){
         
        
-
+        document.querySelector(evento.target.attributes[0].nodeValue).scrollIntoView({
+            behavior: 'smooth'
+          });
         
 
         let seleccion = evento.target;

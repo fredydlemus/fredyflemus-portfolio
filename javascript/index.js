@@ -42,7 +42,10 @@ $(window).on("scroll", function(){
 let closeUrl = "./icons/close.svg";
 let openUrl = "./icons/list.svg";
 
+const $form = document.querySelector('#form');
+// const $buttonMailto = document.querySelector('#mailto');
 
+$form.addEventListener('submit', handleSubmit);
 let menuButton = document.getElementById("menu-button");
 menuButton.addEventListener("touchstart", mostrarMenu);
 let menu = document.getElementById("menu");
@@ -54,7 +57,24 @@ let headerMenu = document.getElementById("header-menu");
 headerMenu.addEventListener("click", clickEnMenu);
 menu.addEventListener("touchstart", touchEnMenu, true);
 
-
+async function handleSubmit(event){
+    event.preventDefault();
+    const form = new FormData(this);
+    console.log(form.get('name'));
+    // $buttonMailto.setAttribute('href', `mailto:fredyflemus@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')}&body=${form.get('message')}`)
+    // $buttonMailto.click();
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if (response.ok){
+        this.reset();
+        alert('Gracias por contactarme, te escribire pronto :)')
+    }
+}
 
 function touchEnMenu(evento){
     evento.preventDefault();

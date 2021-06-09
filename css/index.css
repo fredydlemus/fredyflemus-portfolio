@@ -99,3 +99,7 @@ body {
   color: #ffff00;
   margin-right: 5px;
 }
+
+#mailto {
+  opacity: 1;
+}

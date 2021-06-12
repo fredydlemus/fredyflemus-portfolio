@@ -48,6 +48,10 @@
   border: none;
 }
 
+.button a {
+  color: var(--dark);
+}
+
 .button:hover {
   background-color: var(--skyblue-hover);
   cursor: pointer;

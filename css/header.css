@@ -77,6 +77,10 @@ a {
   text-decoration: none;
 }
 
+#menu ul button a {
+  color: var(--dark);
+}
+
 #menu ul a.is-active {
   color: var(--skyblue);
   font-weight: bold;
@@ -124,6 +128,10 @@ a {
 
   #header-menu ul button {
     margin-top: 0;
+  }
+
+  #header-menu ul button a {
+    color: var(--dark);
   }
 
   #header-menu ul a.is-active {

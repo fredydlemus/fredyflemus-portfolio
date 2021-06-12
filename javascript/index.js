@@ -55,7 +55,7 @@ let imagenMenu = document.getElementById("img-menu");
 let headerMenu = document.getElementById("header-menu");
 
 headerMenu.addEventListener("click", clickEnMenu);
-menu.addEventListener("touchstart", touchEnMenu, true);
+menu.addEventListener("touchstart", touchEnMenu);
 
 async function handleSubmit(event){
     event.preventDefault();
@@ -77,13 +77,13 @@ async function handleSubmit(event){
 }
 
 function touchEnMenu(evento){
-    evento.preventDefault();
+    // evento.preventDefault();
     
 
     
     // moverseA(evento.target.href);
     
-    if(evento.target.nodeName === "A"){
+    if(evento.target.nodeName === "A" && evento.target.offsetParent.nodeName != "BUTTON"){
         
        
         document.querySelector(evento.target.attributes[0].nodeValue).scrollIntoView({
@@ -109,6 +109,9 @@ function touchEnMenu(evento){
             hermanoRigth = hermanoRigth.parentNode.nextElementSibling;
         }
 
+    }else if(evento.target.offsetParent.nodeName === "BUTTON"){
+        
+        window.open('https://drive.google.com/file/d/1I1ZtD2kJoJsg0JaSoXjJ25QPBiDDvOcB/view?usp=sharing', '_blank');
     }
 
     cerrarMenu(evento);
@@ -116,7 +119,7 @@ function touchEnMenu(evento){
 
 function clickEnMenu(evento){
     // console.log(evento.target.attributes[0].nodeValue);
-    if(evento.target.nodeName === "A"){
+    if(evento.target.nodeName === "A" && evento.target.offsetParent.nodeName != "BUTTON"){
         
         let seleccion = evento.target;
         seleccion.classList.add("is-active");

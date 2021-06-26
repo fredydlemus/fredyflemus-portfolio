@@ -103,6 +103,30 @@ body {
   margin-right: 5px;
 }
 
+.sass {
+  font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  border: 1px solid rgb(255, 0, 85);
+  color: rgb(255, 0, 85);
+}
+
+.pug {
+  font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  border: 1px solid brown;
+  color: brown;
+}
+
 #mailto {
   opacity: 1;
 }

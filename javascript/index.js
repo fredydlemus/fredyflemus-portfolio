@@ -52,6 +52,21 @@ let menu = document.getElementById("menu");
 let darkWindow = document.getElementById("darkWindow");
 let imagenMenu = document.getElementById("img-menu");
 
+// projectSection.innerHTML = listProyects[0];  --- prueba
+
+
+
+// let nuevoNodo = document.createElement('div');
+// nuevoNodo.innerHTML = listProyects[0];
+// nuevoNodo.classList.add("project");
+// projectSection.insertBefore(nuevoNodo, contacto);
+
+
+// let nuevoNodo2 = document.createElement('div');
+// nuevoNodo2.innerHTML = listProyects[1];
+// nuevoNodo2.classList.add("project");
+// projectSection.insertBefore(nuevoNodo2, contacto);
+
 let headerMenu = document.getElementById("header-menu");
 
 headerMenu.addEventListener("click", clickEnMenu);
@@ -168,5 +183,8 @@ function cerrarMenu(evento){
 // function moverseA(idElemento){
 //     location = idElemento;
 // }
+
+
+
 
 

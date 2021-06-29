@@ -1,48 +1,80 @@
-<div class="project">
-            <div class="projects-image">
-                <img src="images/jsgame.png" alt="" width="300" height="300"> 
-            </div>
-            <div class="projects-description">
-                <a class="title" target="_blank" href="https://fredyflemus.github.io/JSGame/">"Sigue la secuencia con JS"</a>
-                <div class="etiquetas">
-                    <div class="html">HTML</div>
-                    <div class="css">CSS</div>
-                    <div class="js">JavaScript</div>
-                    
-                </div>
-                <p>El juego consiste en que el programa genera una secuencia la cual el usuario debe repetir pulsando los mismos botones en el orden correcto, cada vez que lo hace correctamente el nivel del juego sube, aumentando un botón mas en la secuencia. </p>
-                <a target="_blank" href="https://github.com/fredyflemus/JSGame" class="button">Ver Código</a>
-                <a target="_blank" href="https://fredyflemus.github.io/JSGame/" class="button is-secondary">Ver Proyecto</a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="projects-image">
-                <img src="images/draw.png" alt="" width="300" height="300">
-            </div>
-            <div class="projects-description">
-                <a class="title" target="_blank" href="https://fredyflemus.github.io/MouseAndTouchEvents/index.html">Dibujo en Canvas</a>
-                <div class="etiquetas">
-                    
-                    <div class="js">JavaScript</div>
-                </div>
-                <p>Este es un sencillo programa donde en base de los elementos tipo "click", "tocuh" y "key" de JavaScript se pueden realizar trazos en una etiqueta canvas.</p>
-                <a target="_blank" href="https://github.com/fredyflemus/MouseAndTouchEvents" class="button">Ver Código</a>
-                <a target="_blank" href="https://fredyflemus.github.io/MouseAndTouchEvents/index.html" class="button is-secondary">Ver Proyecto</a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="projects-image">
-                <img src="images/portafolio.png" alt="" width="300" height="300">
-            </div>
-            <div class="projects-description">
-                <a class="title" target="_blank" href="https://fredyflemus.github.io/fredyflemus-portfolio/">Mi portafolio</a>
-                <div class="etiquetas">
-                    <div class="html">HTML</div>
-                    <div class="css">CSS</div>
-                    <div class="js">JavaScript</div>
-                </div>
-                <p>La pagina donde estas es un proyecto que elabore desde cero, usando html y css para la estructura y estilo correpondientemente y dejando el uso de javascript para la usabilidad de los menus.</p>
-                <a target="_blank" href="https://github.com/fredyflemus/fredyflemus-portfolio" class="button">Ver Código</a>
-                <a target="_blank" href="https://fredyflemus.github.io/fredyflemus-portfolio/" class="button is-secondary">Ver Proyecto</a>
-            </div>
-        </div>
+const projectSection = document.getElementById("project-section");
+
+
+let current_page = 1;
+let rows = 3;
+
+const pagination_element = document.createElement('div');
+pagination_element.classList.add("pagenumbers");
+pagination_element.id = "pagination";
+
+function DisplayList(items, wrapper, rows_par_page, page){
+
+    wrapper.innerHTML = "";
+
+    let titulo = document.createElement('h2');
+    titulo.classList.add("title");
+    titulo.innerText = "Proyectos";
+    wrapper.appendChild(titulo);
+
+    wrapper.appendChild(pagination_element);
+
+    let contacto = document.createElement('div');
+    contacto.id = "contacto";
+    wrapper.appendChild(contacto);
+
+    page--;
+
+    let start = rows_par_page * page;
+    let end = start + rows_par_page;
+    let paginatedItem = items.slice(start, end);
+
+    for(let i = 0; i < paginatedItem.length; i++){
+        let item = paginatedItem[i];
+
+        let item_element = document.createElement('div');
+        item_element.classList.add("project");
+        item_element.innerHTML = item;
+        wrapper.insertBefore(item_element, pagination_element);
+    }
+
+
+}
+
+function setupPagination(items, wrapper, rows_par_page){
+    wrapper.innerHTML = "";
+
+    let page_count = Math.ceil(items.length / rows_par_page);
+    for(let i = 1; i < page_count + 1; i++){
+        let btn = paginationButton(i, items);
+        wrapper.appendChild(btn);
+    }
+}
+
+
+function paginationButton(page, items){
+    let button = document.createElement('button');
+    button.innerText = page;
+    
+
+    if(current_page == page){
+        button.classList.add('active');
+    }
+
+    button.addEventListener('click', function(){
+        // window.scrollTo(0, 100);
+        document.getElementById("proyectos2").scrollIntoView();
+        current_page = page;
+        DisplayList(items, projectSection, rows, current_page);
+
+        current_btn = document.querySelector('.pagenumbers button.active');
+        current_btn.classList.remove('active');
+
+        button.classList.add('active');
+
+    })
+    return button;
+}
+
+DisplayList(listProyects, projectSection, rows, current_page);
+setupPagination(listProyects, pagination_element, rows);

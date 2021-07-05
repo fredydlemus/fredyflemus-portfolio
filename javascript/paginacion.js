@@ -2,7 +2,7 @@ const projectSection = document.getElementById("project-section");
 
 
 let current_page = 1;
-let rows = 3;
+let rows = 5;
 
 const pagination_element = document.createElement('div');
 pagination_element.classList.add("pagenumbers");
